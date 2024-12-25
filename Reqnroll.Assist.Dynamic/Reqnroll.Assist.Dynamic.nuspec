@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <version>1.0</version>
+    <authors>Rajesh Poola</authors>
+    <owners>Rajesh Poola</owners>
+    <dependencies>
+      <group targetFramework="net8.0">
+        <dependency id="Dynamitey" version="3.0.3" />
+        <dependency id="Reqnroll" version="2.2.1" />
+      </group>
+    </dependencies>
+    <id>Reqnroll.Assist.Dynamic</id>
+    <title>Reqnroll.Assist.Dynamic</title>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <tags>Reqnroll, Gherkin, Cucumber, Dynamic</tags>
+    <description>Adds support for dynamic instances and sets from Reqnroll tables</description>
+    <summary>See documentation at https://github.com/RajeshPoola/Reqnroll.Assist.Dynamic/wiki/Documentation</summary>
+    <copyright>Copyright © Rajesh Poola  2024</copyright>
+    <projectUrl>https://github.com/RajeshPoola/Reqnroll.Assist.Dynamic/</projectUrl>
+    <repositoryUrl>https://github.com/RajeshPoola/Reqnroll.Assist.Dynamic</repositoryUrl>
+  </metadata>
+  <files>
+    <file src="bin/Release/net8.0/Reqnroll.Assist.Dynamic.dll" target="lib\net8.0" />
+
+    <!-- <file src="$SolutionDir$/../../LICENSE" target="LICENSE" /> -->
+  </files>
+</package>

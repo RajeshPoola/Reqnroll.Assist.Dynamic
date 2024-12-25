@@ -1,6 +1,6 @@
-# SpecFlow.Assist.Dynamic
+# Reqnroll.Assist.Dynamic
 
-SpecFlow.Assist.Dynamic is a couple of simple extension methods for the SpecFlow Table object that helps you to write less code. 
+Reqnroll.Assist.Dynamic is a couple of simple extension methods for the Reqnroll Table object that helps you to write less code. 
 
 What would you rather write? 
 This:
@@ -51,9 +51,9 @@ public class StepsUsingDynamic
     public void NameShouldBe(string expectedValue) { Assert.AreEqual(expectedValue, _instance.Name);  }
 }
 ```
-The later version uses SpecFlow.Assist.Dynamic. Shorter, sweater and more fun!
+The later version uses Reqnroll.Assist.Dynamic. Shorter, sweater and more fun!
 
 > well, this is may be one of the best usecase for dynamic i have ever seen
->> A happy SpecFlow.Assists.Dynamic user
+>> A happy Reqnroll.Assists.Dynamic user
 
-Full [documentation on the wiki](https://github.com/marcusoftnet/SpecFlow.Assist.Dynamic/wiki/Documentation)
+Full [documentation on the wiki](https://github.com/RajeshPoola/Reqnroll.Assist.Dynamic/wiki/Documentation)
