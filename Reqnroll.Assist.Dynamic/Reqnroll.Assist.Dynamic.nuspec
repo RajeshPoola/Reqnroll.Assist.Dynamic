@@ -1,29 +1,35 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
-    <version>1.0</version>
+    <id>Reqnroll.Assist.Dynamic</id>
+    <version>1.0.0</version>
+    <!-- Ensure versioning aligns with semantic versioning -->
     <authors>Rajesh Poola</authors>
     <owners>Rajesh Poola</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <!-- MIT License -->
+    <projectUrl>https://github.com/RajeshPoola/Reqnroll.Assist.Dynamic/</projectUrl>
+    <repository type="git" url="https://github.com/RajeshPoola/Reqnroll.Assist.Dynamic" />
+    <tags>Reqnroll, Gherkin, Cucumber, Dynamic</tags>
+    <description>
+      Adds support for dynamic instances and sets from Reqnroll tables.
+      This package is designed for use in .NET projects and integrates easily with Reqnroll.
+    </description>
+    <summary>
+      Support for dynamic objects and sets generated from Reqnroll tables.
+    </summary>
+    <copyright>Copyright © Rajesh Poola 2024</copyright>
     <dependencies>
       <group targetFramework="net8.0">
         <dependency id="Dynamitey" version="3.0.3" />
         <dependency id="Reqnroll" version="2.2.1" />
       </group>
     </dependencies>
-    <id>Reqnroll.Assist.Dynamic</id>
-    <title>Reqnroll.Assist.Dynamic</title>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <license type="expression">MIT</license>
-    <tags>Reqnroll, Gherkin, Cucumber, Dynamic</tags>
-    <description>Adds support for dynamic instances and sets from Reqnroll tables</description>
-    <summary>See documentation at https://github.com/RajeshPoola/Reqnroll.Assist.Dynamic/wiki/Documentation</summary>
-    <copyright>Copyright © Rajesh Poola  2024</copyright>
-    <projectUrl>https://github.com/RajeshPoola/Reqnroll.Assist.Dynamic/</projectUrl>
-    <repositoryUrl>https://github.com/RajeshPoola/Reqnroll.Assist.Dynamic</repositoryUrl>
   </metadata>
   <files>
     <file src="bin/Release/net8.0/Reqnroll.Assist.Dynamic.dll" target="lib\net8.0" />
-
-    <!-- <file src="$SolutionDir$/../../LICENSE" target="LICENSE" /> -->
+    <file src="LICENSE" target="LICENSE" />
+    <file src="README.md" target="README.md" />
   </files>
 </package>
