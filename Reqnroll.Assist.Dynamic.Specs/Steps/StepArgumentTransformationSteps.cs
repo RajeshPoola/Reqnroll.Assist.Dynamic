@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace Reqnroll.Assist.Dynamic.Specs.Steps;
+﻿namespace Reqnroll.Assist.Dynamic.Specs.Steps;
 
 [Binding]
 public class StepArgumentTransformationSteps(State state)

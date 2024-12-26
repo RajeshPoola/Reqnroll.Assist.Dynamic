@@ -6,10 +6,6 @@
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <RootNamespace>AssistDynamic.Specs</RootNamespace>
-    <IsPackable>false</IsPackable>
   </PropertyGroup>
 
   <ItemGroup>

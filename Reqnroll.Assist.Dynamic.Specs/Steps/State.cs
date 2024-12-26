@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace Reqnroll.Assist.Dynamic.Specs.Steps;
+﻿namespace Reqnroll.Assist.Dynamic.Specs.Steps;
 
 public class State
 {

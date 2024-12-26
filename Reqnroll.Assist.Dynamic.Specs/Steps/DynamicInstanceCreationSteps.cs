@@ -1,7 +1,4 @@
-﻿using System;
-using FluentAssertions;
-
-namespace Reqnroll.Assist.Dynamic.Specs.Steps;
+﻿namespace Reqnroll.Assist.Dynamic.Specs.Steps;
 
 [Binding]
 public class DynamicInstanceCreationSteps(State state)
@@ -16,21 +13,21 @@ public class DynamicInstanceCreationSteps(State state)
     [Then("the Name property should equal '(.*)'")]
     public void NameShouldBe(string expectedValue)
     {
-        var actual = ((string)state.OriginalInstance.Name);
+        var actual = (string)state.OriginalInstance.Name;
         actual.Should().Be(expectedValue);
     }
 
     [Then(@"the Age property should equal (\d+)")]
     public void AgeShouldBe(int expectedAge)
     {
-        var actualAge = ((int)state.OriginalInstance.Age);
+        var actualAge = (int)state.OriginalInstance.Age;
         actualAge.Should().Be(expectedAge);
     }
 
     [Then(@"the age property should equal (\d+)")]
     public void LowerCaseAgeShouldBe(int expectedAge)
     {
-        var actualAge = ((int)state.OriginalInstance.age);
+        var actualAge = (int)state.OriginalInstance.age;
         actualAge.Should().Be(expectedAge);
     }
 
@@ -38,7 +35,7 @@ public class DynamicInstanceCreationSteps(State state)
     public void BirthDateShouldBe(string expectedDate)
     {
         var expected = DateTime.Parse(expectedDate);
-        var actual = ((DateTime)state.OriginalInstance.BirthDate);
+        var actual = (DateTime)state.OriginalInstance.BirthDate;
         actual.Should().Be(expected);
     }
 
@@ -56,48 +53,48 @@ public class DynamicInstanceCreationSteps(State state)
 
     private void CheckLengthInMeters(double expectedLengthInMeters)
     {
-        var actual = ((double)state.OriginalInstance.LengthInMeters);
+        var actual = (double)state.OriginalInstance.LengthInMeters;
         actual.Should().Be(expectedLengthInMeters);
     }
 
     private void CheckMolecularWeight(decimal expectedMolecularWeight)
     {
-        var actual = ((decimal)state.OriginalInstance.MolecularWeight);
+        var actual = (decimal)state.OriginalInstance.MolecularWeight;
         actual.Should().Be(expectedMolecularWeight);
     }
 
     [Then(@"the SATScore should be (\d+)")]
     public void SatTest(int expectedScore)
     {
-        var actual = ((int)state.OriginalInstance.SATScore);
+        var actual = (int)state.OriginalInstance.SATScore;
         actual.Should().Be(expectedScore);
     }
 
     [Then("the IsDeveloper property should equal '(.*)'")]
     public void ThenTheIsDeveloperPropertyShouldEqualTrueAndBeOfTypeBool(bool expectedValue)
     {
-        var actual = ((bool)state.OriginalInstance.IsDeveloper);
+        var actual = (bool)state.OriginalInstance.IsDeveloper;
         actual.Should().Be(expectedValue);
     }
 
     [Then("the CharpNmeWithStrangeChars property should equal '(.*)'")]
     public void ThenTheCharpNmeWithStrangeCharsPropertyShouldEqual(string expectedValue)
     {
-        var actual = ((string)state.OriginalInstance.CharpNmeWithStrangeChars);
+        var actual = (string)state.OriginalInstance.CharpNmeWithStrangeChars;
         actual.Should().Be(expectedValue);
     }
 
     [Then("the My_Nice_Variable property should equal '(.*)'")]
     public void ThenTheMy_Nice_VariablePropertyShouldEqual(string expectedValue)
     {
-        var actual = ((string)state.OriginalInstance.My_Nice_Variable);
+        var actual = (string)state.OriginalInstance.My_Nice_Variable;
         actual.Should().Be(expectedValue);
     }
 
     [Then("the MyVariableNeedsCleanUp property should equal '(.*)'")]
     public void ThenTheMyVariableNeedsCleanUpPropertyShouldEqual(string expectedValue)
     {
-        var actual = ((string)state.OriginalInstance.MyVariableNeedsCleanUp);
+        var actual = (string)state.OriginalInstance.MyVariableNeedsCleanUp;
         actual.Should().Be(expectedValue);
     }
 
@@ -132,28 +129,28 @@ public class DynamicInstanceCreationSteps(State state)
     [Then("the Name value should still be '(.*)'")]
     public void ThenTheNameValueShouldStillBe(string expectedValue)
     {
-        var actual = ((string)state.OriginalInstance.Name);
+        var actual = (string)state.OriginalInstance.Name;
         actual.Should().Be(expectedValue);
     }
 
     [Then("the Age value should still be '(.*)'")]
     public void ThenTheAgeValueShouldStillBe(string expectedValue)
     {
-        var actual = ((string)state.OriginalInstance.Age);
+        var actual = (string)state.OriginalInstance.Age;
         actual.Should().Be(expectedValue);
     }
 
     [Then("the birth date should still be '(.*)'")]
     public void ThenTheBirthDateShouldStillBe(string expectedValue)
     {
-        var actual = ((string)state.OriginalInstance.BirthDate);
+        var actual = (string)state.OriginalInstance.BirthDate;
         actual.Should().Be(expectedValue);
     }
 
     [Then("length in meter should still be '(.*)'")]
     public void ThenLengthInMeterShouldStillBe(string expectedValue)
     {
-        var actual = ((string)state.OriginalInstance.LengthInMeters);
+        var actual = (string)state.OriginalInstance.LengthInMeters;
         actual.Should().Be(expectedValue);
     }
 }

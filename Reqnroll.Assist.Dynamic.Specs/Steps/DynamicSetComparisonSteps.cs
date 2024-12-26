@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using FluentAssertions;
-
-namespace Reqnroll.Assist.Dynamic.Specs.Steps;
+﻿namespace Reqnroll.Assist.Dynamic.Specs.Steps;
 
 [Binding]
 public class DynamicSetComparisonSteps(State state)
@@ -14,7 +11,7 @@ public class DynamicSetComparisonSteps(State state)
     private void CheckForOneDifferenceContainingString(string expectedString)
     {
         var ex = GetSetComparisonException();
-        var diffs = ((List<string>)ex.Differences);
+        var diffs = (List<string>)ex.Differences;
         var diff = diffs.Find(f => f.Contains(expectedString));
         diff.Should().NotBeNull();
     }
