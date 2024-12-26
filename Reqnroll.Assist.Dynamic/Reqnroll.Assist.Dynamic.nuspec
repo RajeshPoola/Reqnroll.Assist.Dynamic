@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>Reqnroll.Assist.Dynamic</id>
-    <version>1.0.0</version>
+    <version>0.0.1</version>
     <!-- Ensure versioning aligns with semantic versioning -->
     <authors>Rajesh Poola</authors>
     <owners>Rajesh Poola</owners>

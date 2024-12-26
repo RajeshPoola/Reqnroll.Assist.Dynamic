@@ -38,38 +38,44 @@ public class DynamicSetCreationSteps(State state)
     [Then(@"the (\d+) item should have BirthDate equal to '(.*)'")]
     public void ItemInSetShouldHaveExpectedBirthDate(int itemNumber, string expectedBirthDate)
     {
-        GetItem(itemNumber).BirthDate.Should().Be(DateTime.Parse(expectedBirthDate));
+        DateTime actualBirthDate = GetItem(itemNumber).BirthDate;
+        actualBirthDate.Should().Be(DateTime.Parse(expectedBirthDate));
     }
 
     [Then(@"the (\d+) item should have Age equal to '(\d+)'")]
     public void ItemInSetShouldHaveExpectedAge(int itemNumber, int expectedAge)
     {
-        GetItem(itemNumber).Age.Should().Be(expectedAge);
+        int actualAge = GetItem(itemNumber).Age;
+        actualAge.Should().Be(expectedAge);
     }
 
     [Then("the (.*) item should still Name equal '(.*)'")]
     public void ThenTheItemShouldStillNameEqual(int itemNumber, string expectedName)
     {
-        GetItem(itemNumber).Name.Should().Be(expectedName);
+        string actualName = GetItem(itemNumber).Name;
+        actualName.Should().Be(expectedName);
     }
 
     [Then("the (.*) item should still Age equal '(.*)'")]
     public void ThenTheItemShouldStillAgeEqual(int itemNumber, string expectedAge)
     {
-        GetItem(itemNumber).Age.Should().Be(expectedAge);
+        string actualAge = GetItem(itemNumber).Age;
+        actualAge.Should().Be(expectedAge);
     }
 
 
     [Then(@"the (\d+) item should have Name equal to '(.*)'")]
     public void ItemInSetShouldHaveExpectedName(int itemNumber, string expectedName)
     {
-        GetItem(itemNumber).Name.Should().Be(expectedName);
+        string actualName = GetItem(itemNumber).Name;
+        actualName.Should().Be(expectedName);
     }
 
     [Then(@"the (\d+) item should have LengthInMeters equal to '(\d+\.\d+)'")]
-    public void ItemInSetShouldHaveExpectedLenghtInMeters(int itemNumber, double expectedLengthInMetersItem)
+    public void ItemInSetShouldHaveExpectedLengthInMeters(int itemNumber, double expectedLengthInMetersItem)
     {
-        GetItem(itemNumber).LengthInMeters.Should.Be(expectedLengthInMetersItem);
+        double actualLengthInMetersItem = GetItem(itemNumber).LengthInMeters;
+        actualLengthInMetersItem.Should().Be(expectedLengthInMetersItem);
     }
 
     [When("I create a set of dynamic instances from this table using no type conversion")]
